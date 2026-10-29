@@ -1,0 +1,5 @@
+{
+  "file_scan_exclusions": [".devenv", ".svelte-kit", "node_modules", "devenv.lock", "package-lock.json", ".git"],
+  "format_on_save": "on",
+  "preferred_line_length": 120,
+}

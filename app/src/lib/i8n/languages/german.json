@@ -1,0 +1,23 @@
+{
+	"name": "Tristan Sebastian Heubner",
+	"username": "tristaneku",
+	"github": "GitHub",
+	"achievements": "Errungenschaften",
+	"follower": "Follower",
+	"following": "Following",
+	"twitter": "Twitter",
+	"has_not_posted": "@tristaneku hat nichts gepostet",
+	"email": "E-Mail",
+	"about_me": "Über mich",
+	"about_text": "ich heiße Tristan, bin 18 Jahre alt, Schüler aus Bayern und bastle für mein Leben gerne an digitalen Projekten. Viele kennen mich unter dem Pseudonym Neku.",
+	"just_contact_me": {
+		"1": "Du möchtest mich kontaktieren? :3c",
+		"2": "Dann",
+		"3": "schreib",
+		"4": "mir doch einfach!"
+	},
+	"hey": "Hey",
+	"highscore": "HIGHSCORE",
+	"global": "GLOBAL",
+	"local": "LOKAL"
+}

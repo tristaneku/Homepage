@@ -1,0 +1,7 @@
+.devenv
+.svelte-kit
+node_modules
+.env
+.DS_Store
+local.db
+build
