@@ -2,7 +2,7 @@
 	import favicon from '#lib/assets/favicon.png';
 	import { onMount } from 'svelte';
 	import type { LayoutProps } from './$types';
-	import { setupI18n } from '#lib/i8n/service.ts';
+	import { setupI18n } from '#lib/i18n/service.ts';
 	import { isLoading } from 'svelte-i18n';
 	import { lenis } from '#lib/lenis.svelte.ts';
 
