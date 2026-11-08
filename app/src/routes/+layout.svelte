@@ -15,6 +15,7 @@
 
 <svelte:head>
 	<meta name="theme-color" content="#f3f3e2" />
+	<meta name="description" content="Hey, my name is Tristan and this is my personal Homepage." />
 	<link rel="icon" href={favicon} />
 	<title>Tristan</title>
 </svelte:head>
@@ -58,5 +59,10 @@
 
 	:global(html)::-webkit-scrollbar {
 		display: none;
+	}
+
+	:global(::selection) {
+		background: var(--cy);
+		color: var(--cb);
 	}
 </style>
