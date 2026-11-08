@@ -58,6 +58,7 @@
 		color: var(--cb);
 		transition: transform 0.2s ease;
 		cursor: pointer;
+		user-select: none;
 	}
 
 	a:hover {
