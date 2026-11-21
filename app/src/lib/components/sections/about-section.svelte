@@ -1,14 +1,9 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 	import Section from '../section.svelte';
-	import LanguageSwitch from '../language-switch.svelte';
 </script>
 
 <Section>
-	<div class="bar">
-		<LanguageSwitch />
-	</div>
-
 	<p class="heading">{$_('about_me')}</p>
 	<p class="text">
 		{$_('hey')},
@@ -22,13 +17,6 @@
 </Section>
 
 <style>
-	.bar {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		padding: 20px;
-	}
-
 	.heading {
 		font-size: 2rem;
 	}

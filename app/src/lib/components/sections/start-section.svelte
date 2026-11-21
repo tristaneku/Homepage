@@ -5,19 +5,20 @@
 	import Section from '../section.svelte';
 	import Snake from '../snake.svelte';
 	import Email from '../links/email.svelte';
+	import TipCarousel from '../tip-carousel.svelte';
+	import { playing } from '#lib/states/playing.svelte.ts';
 
 	let innerWidth = $state(0);
-	let playing = $state(false);
 
 	$effect(() => {
-		if (innerWidth <= 1024) playing = false;
+		if (innerWidth <= 1024) playing.value = false;
 	});
 </script>
 
 <svelte:window bind:innerWidth />
 
 <Section>
-	<div class="main" style:opacity={playing ? 0.3 : 1} style:z-index={playing ? 0 : 1}>
+	<div class="main" style:opacity={playing.value ? 0.3 : 1} style:z-index={playing.value ? 0 : 1}>
 		<p class="name">{$_('name')}</p>
 
 		<div class="links-row">
@@ -27,8 +28,12 @@
 		</div>
 	</div>
 
+	{#if innerWidth > 1024 && !playing.value}
+		<TipCarousel />
+	{/if}
+
 	{#if innerWidth > 1024}
-		<Snake bind:playing />
+		<Snake />
 	{/if}
 </Section>
 

@@ -1,9 +1,8 @@
 <script lang="ts">
+	import { playing } from '#lib/states/playing.svelte.ts';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import * as Tone from 'tone';
-
-	let { playing = $bindable(false) }: { playing: boolean } = $props();
 
 	let ending = false;
 
@@ -85,8 +84,8 @@
 
 		playSound('move');
 
-		if (!playing) {
-			playing = true;
+		if (!playing.value) {
+			playing.value = true;
 			setClock(10);
 		}
 
@@ -94,7 +93,7 @@
 	}
 
 	function onScroll() {
-		if (playing && !ending) {
+		if (playing.value && !ending) {
 			ending = true;
 			pressable = false;
 			restart();
@@ -228,7 +227,7 @@
 
 	function reset() {
 		ending = false;
-		playing = false;
+		playing.value = false;
 		pressable = true;
 		score = 0;
 		velocity = [0, 1];
@@ -284,7 +283,7 @@
 
 <canvas bind:this={canvas} width={innerWidth} height={innerHeight}></canvas>
 
-{#if playing}
+{#if playing.value}
 	<div class="overlay" transition:fade={{ duration: 200 }} style:opacity={overlayCovered ? 0.3 : 1}>
 		<div class="highscore local">
 			<p>LOCAL</p>
@@ -306,6 +305,11 @@
 	canvas {
 		position: absolute;
 		inset: 0;
+		transition: opacity 0.4s ease 0.4s;
+
+		@starting-style {
+			opacity: 0;
+		}
 	}
 
 	.overlay {

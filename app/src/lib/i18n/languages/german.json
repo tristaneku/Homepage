@@ -19,5 +19,7 @@
 	"hey": "Hey",
 	"highscore": "HIGHSCORE",
 	"global": "GLOBAL",
-	"local": "LOKAL"
+	"local": "LOKAL",
+	"press_arrow_keys": "← → drücken für ein Minispiel",
+	"scroll_down": "Scrolle nach unten für mehr"
 }

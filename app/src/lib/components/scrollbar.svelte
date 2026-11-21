@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { lenis } from '#lib/lenis.svelte.ts';
+	import { lenis } from '#lib/states/lenis.svelte.ts';
 	import { onMount } from 'svelte';
 
 	const TRACK_PADDING = 8;

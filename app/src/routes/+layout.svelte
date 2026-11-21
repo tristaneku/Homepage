@@ -4,7 +4,7 @@
 	import type { LayoutProps } from './$types';
 	import { setupI18n } from '#lib/i18n/service.ts';
 	import { isLoading } from 'svelte-i18n';
-	import { lenis } from '#lib/lenis.svelte.ts';
+	import { lenis } from '#lib/states/lenis.svelte.ts';
 
 	setupI18n();
 
