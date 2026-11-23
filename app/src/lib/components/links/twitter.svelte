@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 	import BaseLink from '../base-link.svelte';
-	import avatar from '#lib/assets/me/avatar.png';
+	import avatar from '#lib/assets/avatar.png';
 	import TwitterIcon from '../icons/twitter-icon.svelte';
 </script>
 

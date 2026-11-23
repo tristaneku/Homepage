@@ -2,9 +2,9 @@
 	import { _ } from 'svelte-i18n';
 	import BaseLink from '../base-link.svelte';
 	import GithubIcon from '../icons/github-icon.svelte';
-	import avatar from '#lib/assets/me/avatar.png';
-	import starstruck from '#lib/assets/github/achievements/starstruck.png';
-	import pullshark from '#lib/assets/github/achievements/pullshark.png';
+	import avatar from '#lib/assets/avatar.png';
+	import starstruck from '#lib/assets/github/starstruck.png';
+	import pullshark from '#lib/assets/github/pullshark.png';
 </script>
 
 <BaseLink url="https://github.com/tristaneku" label={$_('github')}>

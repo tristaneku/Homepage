@@ -1,5 +1,4 @@
 <script lang="ts">
-	import favicon from '#lib/assets/favicon.png';
 	import { onMount } from 'svelte';
 	import type { LayoutProps } from './$types';
 	import { setupI18n } from '#lib/i18n/service.ts';
@@ -12,13 +11,6 @@
 
 	let { children }: LayoutProps = $props();
 </script>
-
-<svelte:head>
-	<meta name="theme-color" content="#f3f3e2" />
-	<meta name="description" content="Hey, my name is Tristan and this is my personal Homepage." />
-	<link rel="icon" href={favicon} />
-	<title>Tristan</title>
-</svelte:head>
 
 {#if !$isLoading}
 	{@render children()}
